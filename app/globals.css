@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+  background-image:
+    radial-gradient(circle at top, rgba(58, 163, 255, 0.18), transparent 25%),
+    radial-gradient(circle at 85% 0%, rgba(255, 159, 42, 0.16), transparent 24%),
+    linear-gradient(180deg, #08111f 0%, #0b1425 38%, #f4f7fb 38%, #f4f7fb 100%);
+}
+
+::selection {
+  background: rgba(255, 159, 42, 0.35);
+  color: #fff;
+}
+
+.glass {
+  @apply border border-white/10 bg-white/10 backdrop-blur-xl;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-spacing {
+  @apply py-16 sm:py-20 lg:py-24;
+}
+
+.card {
+  @apply rounded-3xl border border-slate-200/80 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.08)];
+}
+
+.text-balance {
+  text-wrap: balance;
+}
